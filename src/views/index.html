@@ -1,0 +1,66 @@
+<header class="site-header">
+  <a class="wordmark" href="/" aria-label="Northstar University home">
+    <span class="wordmark-mark" aria-hidden="true">N</span>
+    <span>
+      <strong>Northstar</strong>
+      <small>University</small>
+    </span>
+  </a>
+  <div class="product-label">Academic Records</div>
+  <nav aria-label="Portal navigation">
+    <a href="#directory">Directory</a>
+    <a href="/records/0018">My records</a>
+    <a href="#support">Support</a>
+  </nav>
+</header>
+
+<main>
+  <section class="intro" aria-labelledby="page-heading">
+    <div class="intro-copy">
+      <p class="eyebrow">Student services portal</p>
+      <h1 id="page-heading">Academic records,<br>made clear.</h1>
+      <p class="lede">Search the Northstar University directory to view published course outcomes and academic record details.</p>
+    </div>
+    <div class="term-card" aria-label="Current academic term">
+      <p>Current term</p>
+      <strong>Autumn 2026</strong>
+      <span>Records updated 24 October</span>
+    </div>
+  </section>
+
+  <section class="directory-section" id="directory" aria-labelledby="directory-heading">
+    <div class="section-heading">
+      <p class="eyebrow">Directory</p>
+      <h2 id="directory-heading">Find a student record</h2>
+      <p>Enter a full or partial name to search published academic records.</p>
+    </div>
+    <form class="search-form" action="/search" method="get">
+      <label for="student-name">Student name</label>
+      <div class="search-control">
+        <input id="student-name" name="name" type="search" placeholder="e.g. Maya Okafor" autocomplete="name" required>
+        <button type="submit">Search directory</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="portal-status" aria-label="Portal status">
+    <div>
+      <span class="status-value">98.7%</span>
+      <span class="status-label">records verified this term</span>
+    </div>
+    <div>
+      <span class="status-value">14</span>
+      <span class="status-label">schools and faculties</span>
+    </div>
+    <div id="support">
+      <span class="status-value">24 h</span>
+      <span class="status-label">typical records support reply</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Northstar University</span>
+  <span>Academic Registry</span>
+  <span>Established 1894</span>
+</footer>

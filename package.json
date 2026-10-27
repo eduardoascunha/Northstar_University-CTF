@@ -1,0 +1,13 @@
+{
+  "name": "northstar-academic-records",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Northstar University Academic Records CTF challenge",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "express": "^5.1.0"
+  }
+}

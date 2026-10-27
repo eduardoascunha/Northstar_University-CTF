@@ -1,0 +1,40 @@
+<header class="site-header">
+  <a class="wordmark" href="/" aria-label="Northstar University home">
+    <span class="wordmark-mark" aria-hidden="true">N</span>
+    <span>
+      <strong>Northstar</strong>
+      <small>University</small>
+    </span>
+  </a>
+  <div class="product-label">Academic Records</div>
+  <nav aria-label="Portal navigation">
+    <a href="/">Directory</a>
+    <a href="/#support">Support</a>
+  </nav>
+</header>
+
+<main class="search-page">
+  <section class="search-panel" aria-labelledby="search-heading">
+    <p class="eyebrow">Directory</p>
+    <h1 id="search-heading">Student search</h1>
+    <form class="search-form" action="/search" method="get">
+      <label for="student-name">Student name</label>
+      <div class="search-control">
+        <input id="student-name" name="name" type="search" value="{{searchTerm}}" placeholder="e.g. Maya Okafor" autocomplete="name">
+        <button type="submit">Search directory</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="search-results" aria-live="polite" aria-labelledby="results-heading">
+    <h2 id="results-heading">Search results</h2>
+    <p>{{searchMessage}}</p>
+    <ul class="results-list">{{results}}</ul>
+  </section>
+</main>
+
+<footer>
+  <span>Northstar University</span>
+  <span>Academic Registry</span>
+  <span>Established 1894</span>
+</footer>

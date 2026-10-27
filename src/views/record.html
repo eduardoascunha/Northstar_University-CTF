@@ -1,0 +1,57 @@
+<header class="site-header">
+  <a class="wordmark" href="/" aria-label="Northstar University home">
+    <span class="wordmark-mark" aria-hidden="true">N</span>
+    <span>
+      <strong>Northstar</strong>
+      <small>University</small>
+    </span>
+  </a>
+  <div class="product-label">Academic Records</div>
+  <nav aria-label="Portal navigation">
+    <a href="/">Directory</a>
+    <a href="/#support">Support</a>
+  </nav>
+</header>
+
+<main class="record-page">
+  <section class="record-heading" aria-labelledby="record-heading">
+    <p class="eyebrow">Academic Registry</p>
+    <p class="record-label">Verified academic record</p>
+    <h1 id="record-heading">{{fullName}}</h1>
+    <p class="student-number">{{studentNumber}}</p>
+    <p class="record-reference">Record reference: {{recordReference}}</p>
+  </section>
+
+  <section class="record-details" aria-label="Academic record details">
+    <dl class="student-details">
+      <div>
+        <dt>Programme</dt>
+        <dd>{{programme}}</dd>
+      </div>
+      <div>
+        <dt>Cohort</dt>
+        <dd>{{cohort}}</dd>
+      </div>
+    </dl>
+
+    <div class="course-record">
+      <div class="course-heading">
+        <div>
+          <p class="eyebrow">Course outcome</p>
+          <h2>{{courseCode}}: {{courseTitle}}</h2>
+        </div>
+        <div class="grade" aria-label="Final grade {{grade}}">{{grade}}</div>
+      </div>
+      <div class="feedback">
+        <h3>Faculty feedback</h3>
+        <p>{{feedback}}</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Northstar University</span>
+  <span>Academic Registry</span>
+  <span>Established 1894</span>
+</footer>
