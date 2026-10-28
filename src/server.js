@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const { initializeDatabase } = require('./db');
+const { privateRecordNotes } = require('./private-record-notes');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -129,7 +130,8 @@ app.get('/records/:recordId', (req, res) => {
     courseCode: escapeHtml(record.course_code),
     courseTitle: escapeHtml(record.course_title),
     grade: escapeHtml(record.grade),
-    feedback: escapeHtml(record.feedback)
+    feedback: escapeHtml(record.feedback),
+    privateNote: escapeHtml(privateRecordNotes.get(record.record_id) || '')
   });
 });
 

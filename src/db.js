@@ -52,11 +52,17 @@ function initializeDatabase() {
       insertRecord.run(18, 1, 'CS204', 'Data Structures', 'A-', 'Clear reasoning throughout. Keep developing your code review habits.');
       insertRecord.run(31, 2, 'DS218', 'Applied Statistics', 'B+', 'Strong analysis. Recheck assumptions before drawing conclusions.');
       insertRecord.run(47, 3, 'SE301', 'Secure Systems Design', 'A', 'Excellent threat modelling and clear technical communication.');
-      insertRecord.run(731, 94, 'CY404', 'Incident Response Practicum', 'A+', 'Confidential faculty note: HiM{gr4d3s_4r3_n0t_pr1v4t3}');
+      insertRecord.run(731, 94, 'CY404', 'Incident Response Practicum', 'A+', 'Strong practical response work and a thoughtful incident timeline.');
     });
 
     seedDatabase();
   }
+
+  database.prepare(`
+    UPDATE academic_records
+    SET feedback = ?
+    WHERE id = 731 AND feedback LIKE '%HiM{%'
+  `).run('Strong practical response work and a thoughtful incident timeline.');
 
   return database;
 }
